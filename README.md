@@ -1,25 +1,24 @@
-# Humidity-and-Temperature-sensor
-Sensor allows to analyze environmental conditions like: humidity and temperature for specific plants. The program reads data from a sensor connected via a serial port, calculates various averages over time, and provides feedback on plant health based on these readings.
+# Czujnik temperatury i wilgotności
+Czujnik pozwala na obserwacje i analizę temperatury i wilgotności, potrzebnych dla prawidlowego wzrostu wybranego kwiatka. Program odczytuje dane z czujnika podłączonego do komputera przez port szeregowy, porównuje odebrane dane z wymaganiami środowiskowymi rośliny oraz podaje jak czuje się roślina.
 
-## Features
-- Real-time Data Acquisition: Reads humidity and temperature data from a sensor via a serial port.
-- Averaging Over Time: Calculates average readings for the last minute, 5 minutes, 30 minutes, and hour.
-- Plant Health Monitoring: Provides feedback on plant health based on sensor data and predefined thresholds.
-- Graphical User Interface: Uses PySimpleGUI for user interaction and displaying data, plots temperature and humidity trends using Matplotlib.
-- Saving: Saves givae data in to .csv file
-
+## Funkcjonalność
+- Odczytywanie danych w czasie rzeczywistym przez port szeregowy
+- Obliczanie średniej pomiarów z ostatnich 5, 30 i 60 minut
+- Porównywanie warunków środowiska w pomieszczeniu z wymaganiami rośliny
+- Funkcyjny interface graficzny dla użytkownika, w tym wyświetlanie wykresów
+- Zapis danych do pliku txt
 ## GUI Layout
 
 ### Main Window:
-- Dropdown for selecting plant type.
-- Input field for naming the plant.
-- Submit button to start monitoring.
+- Wybranie rodzaju rośliny
+- Nadanie roślinie imienia
+- Przycisk submit pozwalający na rozpoczęcie analizy danych
 
 ### Sensor Data Window:
-- Real-time and average readings for humidity and temperature.
-- Status indicator for plant health.
-- Buttons to view data charts and exit the application.
+- Pokazywanie aktualnych pomiarów co sekunde oraz wyświetlanie średnich
+- Pokazanie statusu kwiatka (czy środowisko jest odpowiednie)
+- Przyciski pozwalalające na przejście do wykresu, zapisanie pomiarów i zamkięcie aplikacji
 
 ### Chart Window:
-- Temperature and humidity trend charts.
-- Back button to return to the sensor data window.
+- Aktualizujące się w czasie rzeczywistym wykresy temperatury i wilgotności
+- Przycisk back pozwalający na powrót do okna głównego aplikacji
